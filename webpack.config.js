@@ -5,7 +5,7 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'mail.js'
+		filename: 'main.js'
 	},
 	resolve:{
 		extensions: ['.js'],
@@ -23,12 +23,12 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin([
+		new HtmlWebpackPlugin(
 			{
 				inject: true,
 				template: './public/index.html',
 				filename: './index.html'
 			}
-		])
+		)
 	]
 }
