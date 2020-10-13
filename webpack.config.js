@@ -29,6 +29,6 @@ module.exports = {
 				template: './public/index.html',
 				filename: './index.html'
 			}
-		)
+		),
 	]
 }
